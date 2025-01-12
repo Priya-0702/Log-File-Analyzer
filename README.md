@@ -49,10 +49,14 @@ result = analyze_logs(log_file)
 
 # Print the summarized report
 print("Summary Report:")
+
 print(f"Total 404 Errors: {result['404 Errors']}")
+
 print("Most Requested Pages:")
 for page, count in result['Most Requested Pages']:
     print(f"{page}: {count} requests")
+    
 print("Top IP Addresses:")
 for ip, count in result['Top IP Addresses']:
+
     print(f"{ip}: {count} requests")
